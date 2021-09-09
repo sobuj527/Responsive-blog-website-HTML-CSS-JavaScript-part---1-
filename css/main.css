@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+* div::before, * div::after {
+  content: '';
+  clear: both;
+  display: inherit
+}
+body {
+  background-color: #eef;
+  font-family: Verdana, Tahoma, Georgia, Arial
+}
+
+#headerSection {
+  background: teal;
+  display: flex;
+  width: 100%;
+  padding: 0 5%;
+  font-size: 18px
+}
+#headerSection a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  margin: 0 2px
+}
+
+.headerLeft {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.headerLeft img {
+  width: 300px;
+  margin-right: 20px
+}
+.headerRight {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
